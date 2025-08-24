@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import stringify from "postcss/lib/stringify";
+
 export const ServicesCard = ({ service, index }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
@@ -14,7 +14,7 @@ export const ServicesCard = ({ service, index }) => {
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
       ref={divRef}
-      onMouseMove={{ handleMouseMove }}
+      onMouseMove={handleMouseMove}
     >
       <div
         className={`pointer-events-none blur-2xl rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 w-[300px] h-[300px] absolute z-0 transition-opacity duration-500 mix-blend-lighten ${
