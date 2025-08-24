@@ -1,8 +1,6 @@
-import { s } from "framer-motion/client";
 import assets from "../assets/assets";
 import { ServicesCard } from "./ServicesCard";
 import Title from "./Title";
-
 const Services = () => {
   const servicesData = [
     {
@@ -42,12 +40,12 @@ const Services = () => {
       <Title
         title="How can we help ?"
         desc=" From strategy to execution , we craft digital solution that move your business forward ."
-          />
-          <div className="flex flex-col md:grid grid-cols-2">
-              {servicesData.map((service,index) => (
-                  <ServicesCard key={index} service={service} index={index}/>
-              ))}
-          </div>
+      />
+      <div className="flex flex-col md:grid grid-cols-2">
+        {servicesData.map((service, index) => (
+          <ServicesCard key={index} service={service} index={index} />
+        ))}
+      </div>
     </div>
   );
 };
