@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-
+import stringify from "postcss/lib/stringify";
 export const ServicesCard = ({ service, index }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
