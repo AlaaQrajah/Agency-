@@ -1,5 +1,5 @@
 import assets from "../assets/assets";
-
+ 
 const Hero = () => {
   return (
     <div
